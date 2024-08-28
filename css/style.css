@@ -1,0 +1,163 @@
+
+/* Global css */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    /* font-family: "Raleway", sans-serif; */
+    font-family: "Open Sans", sans-serif;
+}
+
+p{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+underline{
+    width: 100px;
+    height: 2px;
+    background: #ff8b38;
+    margin: 0 auto;
+}
+
+/*header css start */
+
+header{
+    width: 100%;
+    padding: 10px 0px;
+    background: black;
+}
+
+.navbar .nav-link{
+    color: white;
+}
+
+.nav-item{
+    margin-left: 15px;
+    position: relative;
+}
+
+.nav-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ff8b38;
+    transition: 0.7s;
+}
+
+.nav-item:hover::after{
+    width: 100%;
+    transition: 0.7s;
+}
+
+.nav-item .active{
+    color: white !important;
+}
+
+/*Banner section code start */
+
+.banner-section{
+    width: 100%;
+    background: url(../img/banner.png) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.content h1{
+    font-size: 75px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.content h1 span{
+    font-weight: 300;
+    color: #ff8b38;
+}
+
+.content h2{
+    color: #fff;
+    width: 79%;
+}
+
+.content .underline{
+    width: 71px;
+    height: 2px;
+    background-color: #fff;
+    margin: 25px 0px;
+}
+
+.content p{
+    width: 73%;
+    font-family: 'Raleway';
+    font-weight: 300;
+    color: white;
+}
+
+.btns a{
+    padding: 8px 30px;
+}
+
+.btns .btn-info{
+    background: transparent;
+    border-radius: 0px;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.cus-height{
+    height: 100vh;
+}
+
+.right-inner .card{
+    width: 350px;
+    border: none !important;
+}
+
+.card .card-header h3{
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.card .card-header h3 span{
+    color: #ff8b38;
+    text-transform: uppercase;
+}
+
+.card .card-footer{
+    background: #ff8b38;
+}
+
+.card .card-footer .form-control{
+    border: none !important;
+    background: transparent;
+}
+
+.form-control{
+    border: none !important;
+    border-bottom: 1px solid #d6d6d6 !important;
+    border-radius: 0;
+}  
